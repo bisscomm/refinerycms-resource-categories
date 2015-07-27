@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Lag en ny Resource Category
+            reorder: Endre rekkefølgen på Resource Categories
+            reorder_done: Ferdig å endre rekkefølgen Resource Categories
+          records:
+            title: Resource Categories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Resource Categories enda. Klikk på "Lag en ny Resource Category" for å legge til din første resource category.
+          resource_category:
+            view_live_html: Vis hvordan denne resource category ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne resource category
+            delete: Fjern denne resource category permanent
+      resource_categories:
+        show:
+          other: Andre Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

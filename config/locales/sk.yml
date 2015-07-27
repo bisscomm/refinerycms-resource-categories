@@ -1,0 +1,28 @@
+sk:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Pridať Resource Category
+            reorder: Preusporiadať Resource Categories
+            reorder_done: Koniec radenia Resource Categories
+          records:
+            title: Resource Categories
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Resource Categories. Kliknite na "Pridať Resource Category" pre pridanie prvého resource category.
+          resource_category:
+            view_live_html: Zobraziť náhľad resource category<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť resource category
+            delete: Zmazať resource category
+      resource_categories:
+        show:
+          other: Daľšie Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

@@ -1,0 +1,21 @@
+<ul>
+  <li><%= render '/refinery/admin/search', :url => refinery.admin_resources_path -%></li>
+  <li>
+    <%= action_label(:upload,  refinery.new_admin_resource_path(:dialog => true), t('.upload_new'))%>
+  </li>
+</ul>
+
+<ul class='collapsible_menu'>
+  <li class='not_a_link'>
+    <%= link_to t('.categories.title'), '#',
+                :class => 'folder_icon' %>
+  </li>
+  <li>
+    <%= link_to t('.categories.manage'), refinery.admin_resource_categories_path,
+                :class => 'folder_edit_icon' %>
+  </li>
+  <li>
+    <%= link_to t('.categories.new'), refinery.new_admin_resource_category_path,
+                :class => 'folder_add_icon' %>
+  </li>
+</ul>

@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Add New Resource Category
+            reorder: Reorder Resource Categories
+            reorder_done: Done Reordering Resource Categories
+          records:
+            title: Resource Categories
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Resource Categories yet. Click "Add New Resource Category" to add your first resource category.
+          resource_category:
+            view_live_html: View this resource category live <br/><em>(opens in a new window)</em>
+            edit: Edit this resource category
+            delete: Remove this resource category forever
+      resource_categories:
+        show:
+          other: Other Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

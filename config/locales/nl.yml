@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Nieuwe Resource Category toevoegen
+            reorder: De volgorde van de Resource Categories wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Resource Category-volgorde
+          records:
+            title: Resource Categories
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Resource Categories. Druk op 'Nieuwe Resource Category toevoegen' om de eerste toe te voegen.
+          resource_category:
+            view_live_html: Deze resource category op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze resource category
+            delete: Deze resource category definitief verwijderen
+      resource_categories:
+        show:
+          other: Andere Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

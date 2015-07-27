@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: 建立新的 Resource Category
+            reorder: 对 Resource Categories 重新排序
+            reorder_done: 对 Resource Categories 的重新排序结束
+          records:
+            title: Resource Categories
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Resource Categories yet. Click "Add New Resource Category" to add your first resource category.
+            no_items_yet: 目前没有 Resource Categories . 点击 "Add New Resource Category" 创建一个resource category.
+          resource_category:
+            view_live_html: 查看 resource category 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 resource category
+            delete: 永久删除 resource category
+      resource_categories:
+        show:
+          other: 其他 Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Yeni Ekle Resource Category
+            reorder: Tekrar sirala Resource Categories
+            reorder_done: Tekrar siralama tamamlandiResource Categories
+          records:
+            title: Resource Categories
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Resource Categories yok henuz.  Tikla "Yeni Ekle Resource Category" eklemek senin ilk resource category.
+          resource_category:
+            view_live_html: Bunu canlu resource category goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle resource category
+            delete: Bunu Sil resource category sonsuza dek
+      resource_categories:
+        show:
+          other: Diger Resource Categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

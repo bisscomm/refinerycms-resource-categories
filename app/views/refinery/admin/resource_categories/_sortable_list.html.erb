@@ -1,0 +1,5 @@
+<ul id='sortable_list'>
+  <%= render :partial => 'resource_category', :collection => @resource_categories %>
+</ul>
+<%= render '/refinery/admin/sortable_list',
+            :continue_reordering => (local_assigns.keys.include?(:continue_reordering)) ? continue_reordering : true %>

@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      resource_categories:
+        title: Resource Categories
+#        article: masculino/femenino
+    resource_categories:
+      admin:
+        resource_categories:
+          actions:
+            create_new: Crear nuevo resource category
+            reorder: Reordenar resource categories
+            reorder_done: Reordenación de resource categories completada
+          records:
+            title: Resource Categories
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay resource categories todavía. Pulsa en "Crear nuevo Resource Category" para crear tu primer resource category.
+          resource_category:
+            view_live_html: Ver este resource category como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este resource category
+            delete: Borrar este resource category para siempre
+      resource_categories:
+        show:
+          other: Otros resource categories
+  activerecord:
+    attributes:
+      'refinery/resource_categories/resource_category':
+        resource_id: Resource
+        product_id: Product

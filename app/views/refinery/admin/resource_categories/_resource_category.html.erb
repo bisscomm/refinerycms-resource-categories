@@ -1,0 +1,29 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(resource_category) -%>">
+  <span class='title'>
+    <%= resource_category_title_with_translations(resource_category) %>
+
+    <span class="preview">
+      <% if Refinery::I18n.frontend_locales.many? %>
+        <span class='locales'>
+          <% resource_category.translations.sort_by{ |t| Refinery::I18n.frontend_locales.index(t.locale)}.each do |translation| %>
+            <% if translation.title.present? %>
+              <%= link_to refinery.edit_admin_resource_category_path(resource_category, :switch_locale => translation.locale), :class => 'locale', title: translation.locale.upcase do %>
+
+                <div class="<%=translation.locale %> locale_marker">
+                  <%= locale_text_icon(translation.locale.upcase) %>
+                </div>
+              <% end %>
+            <% end %>
+          <% end %>
+        </span>
+      <% end %>
+    </span>
+  </span>
+
+  <span class='actions'>
+    <%= action_icon(:edit, refinery.edit_admin_resource_category_path(resource_category), t('.edit') ) %>
+    <%= action_icon(:delete, refinery.admin_resource_category_path(resource_category), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: resource_category.title)}}  ) %>
+  </span>
+</li>

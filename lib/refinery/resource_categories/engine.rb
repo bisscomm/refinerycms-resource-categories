@@ -15,6 +15,10 @@ module Refinery
         end
       end
 
+      config.to_prepare do
+        Refinery::ResourceCategories.attach!
+      end
+
       config.after_initialize do
         Refinery.register_extension(Refinery::ResourceCategories)
       end

@@ -3,7 +3,7 @@
 Resource categories extension for [Refinery CMS](http://refinerycms.com) allows you to categorize resources.
 
 ### In summary you can:
-* Manage resouce categories
+* Manage resource categories
 * Add and remove categories to a resource
 
 ## Requirements

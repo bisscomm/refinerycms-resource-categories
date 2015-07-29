@@ -36,12 +36,12 @@
   <div class="field" id="categories">
     <%= f.label :resource_categories, t('.categories') %>
     <ul class='resource_categories'>
-      <% Refinery::ResourceCategory.all.each do |category| %>
+      <% @categories.each do |category| %>
         <li>
-          <%= check_box_tag 'resource[category_ids][]', category.id,
+          <%= check_box_tag 'resource[resource_category_ids][]', category.id,
                              @resource.resource_categories.include?(category),
                              :id => (id="resource_category_ids_#{category.id}") %>
-          <%= label_tag 'resource[category_ids][]', category.title,
+          <%= label_tag 'resource[resource_category_ids][]', category.title,
                          :class => 'stripped',
                          :for => id %>
         </li>

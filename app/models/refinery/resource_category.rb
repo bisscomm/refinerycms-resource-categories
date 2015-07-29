@@ -6,7 +6,7 @@ module Refinery
 
     validates :title, :presence => true
 
-    has_many :resource_categorizations, :class_name => 'Refinery::ResourceCategorization', :dependent => :destroy, :foreign_key => :category_id
+    has_many :resource_categorizations, :class_name => 'Refinery::ResourceCategorization', :dependent => :delete_all, :foreign_key => :category_id
     has_many :resources, :class_name => 'Refinery::Resource', :through => :resource_categorizations
   end
 end

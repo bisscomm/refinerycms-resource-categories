@@ -1,28 +1,16 @@
 fr:
   refinery:
-    plugins:
-      resource_categories:
-        title: Resource Categories
-    resource_categories:
-      admin:
-        resource_categories:
-          actions:
-            create_new: Créer un(e) nouve(au/l/lle) Resource Category
-            reorder: Réordonner les Resource Categories
-            reorder_done: Fin de réordonnancement des Resource Categories
-          records:
-            title: Resource Categories
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Resource Category. Cliquer sur "Créer un(e) nouve(au/l/lle) Resource Category" pour créer votre premi(er/ère) resource category.'
-          resource_category:
-            view_live_html: Voir ce(t/tte) resource category <br/><em>(Ouvre une nouvelle fenêtre)</em>
-            edit: Modifier ce(t/tte) resource category
-            delete: Supprimer définitivement ce(t/tte) resource category
-      resource_categories:
-        show:
-          other: Autres Resource Categories
+    admin:
+      resources:
+        actions:
+          back_to_resources: Retourner à la liste des fichiers
+          resource_categories:
+            title: Catégories
+            manage: Gérer les catégories
+            new: Nouvelle catégorie
+        form:
+          resource_categories: Catégories
   activerecord:
     attributes:
-      'refinery/resource_categories/resource_category':
-        resource_id: Resource
-        product_id: Product
+      'refinery/resource_category':
+        title: Titre

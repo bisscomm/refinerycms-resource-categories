@@ -1,5 +1,7 @@
 # Refinery CMS Resource Categories
 
+[![Build Status](https://travis-ci.org/bisscomm/refinerycms-resource-categories.svg?branch=master)](https://travis-ci.org/refinery/refinerycms) [![Code Climate](https://codeclimate.com/github/bisscomm/refinerycms-resource-categories/badges/gpa.svg)](https://codeclimate.com/github/bisscomm/refinerycms-resource-categories) [![Test Coverage](https://codeclimate.com/github/bisscomm/refinerycms-resource-categories/badges/coverage.svg)](https://codeclimate.com/github/bisscomm/refinerycms-resource-categories/coverage)
+
 Resource categories extension for [Refinery CMS](http://refinerycms.com) allows you to categorize resources.
 
 ### In summary you can:

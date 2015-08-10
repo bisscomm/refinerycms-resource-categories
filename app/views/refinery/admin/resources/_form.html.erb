@@ -32,22 +32,24 @@
     </span>
     <%= f.text_field :resource_title, placeholder: t('.resource_title') %>
   </div>
-
-  <div class="field" id="categories">
-    <%= f.label :resource_categories, t('.resource_categories') %>
-    <ul class='resource_categories'>
-      <% @categories.each do |category| %>
-        <li>
-          <%= check_box_tag 'resource[resource_category_ids][]', category.id,
-                             @resource.resource_categories.include?(category),
-                             :id => (id="resource_category_ids_#{category.id}") %>
-          <%= label_tag 'resource[resource_category_ids][]', category.title,
-                         :class => 'stripped',
-                         :for => id %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+  
+  <% if @categories.present? %>
+    <div class="field" id="categories">
+      <%= f.label :resource_categories, t('.resource_categories') %>
+      <ul class='resource_categories'>
+        <% @categories.each do |category| %>
+          <li>
+            <%= check_box_tag 'resource[resource_category_ids][]', category.id,
+                               @resource.resource_categories.include?(category),
+                               :id => (id="resource_category_ids_#{category.id}") %>
+            <%= label_tag 'resource[resource_category_ids][]', category.title,
+                           :class => 'stripped',
+                           :for => id %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,

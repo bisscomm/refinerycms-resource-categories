@@ -4,15 +4,6 @@ Refinery::Admin::ResourcesController.class_eval do
 
   protected
 
-  def resource_params
-    # update only supports a single file, create supports many.
-    if action_name == 'update'
-      params.require(:resource).permit(:resource_title, :file, :resource_category_ids => [])
-    else
-      params.require(:resource).permit(:resource_title, :file => [], :resource_category_ids => [])
-    end
-  end
-
   def find_all_categories
     @categories = Refinery::ResourceCategory.all
   end
@@ -21,3 +12,15 @@ Refinery::Admin::ResourcesController.class_eval do
     params[:resource][:resource_category_ids] ||= []
   end
 end
+
+Refinery::Admin::ResourcesController.prepend(
+  Module.new do
+    def permitted_resource_params
+      super << [:resource_category_ids => []]
+    end
+
+    def permitted_update_resource_params
+      super << [:resource_category_ids => []]
+    end
+  end
+)

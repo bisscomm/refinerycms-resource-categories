@@ -10,7 +10,7 @@ Resource categories extension for [Refinery CMS](http://refinerycms.com) allows 
 
 ## Requirements
 
-This version of `refinerycms-resource-categories` supports Rails 4.1.x.
+This version of `refinerycms-resource-categories` supports Rails 4.1+.
 
 * [Refinery CMS](http://refinerycms.com) version 3.0.0 or above.
 
